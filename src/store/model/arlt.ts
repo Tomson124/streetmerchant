@@ -11,10 +11,15 @@ export const Arlt: Store = {
       container: '.articleprice .price',
       euroFormat: true,
     },
-    outOfStock: {
-      container: '.articleDesc .shippingtext',
-      text: ['Neuer Artikel in Kürze verfügbar', 'Liefertermin unbekannt'],
-    },
+    outOfStock: [
+      {
+        container: '.articleDesc .shippingtext',
+        text: ['Neuer Artikel in Kürze verfügbar', 'Liefertermin unbekannt'],
+      },
+      {
+        container: '.articleDesc .soldout',
+        text: ['Dieser Artikel ist leider ausverkauft!'],
+      }]
   },
   links: [
     {
@@ -72,13 +77,6 @@ export const Arlt: Store = {
       series: '3070',
       url:
         'https://www.arlt.com/Gaming/Gaming-Hardware/Gainward-GeForce-RTX-3070-Phoenix-GS.html',
-    },
-    {
-      brand: 'asus',
-      model: 'tuf oc',
-      series: '3080',
-      url:
-        'https://www.arlt.com/Hardware/PC-Komponenten/Grafikkarten/ASUS-TUF-Gaming-GeForce-RTX-3080-OC.html',
     },
     {
       brand: 'msi',
